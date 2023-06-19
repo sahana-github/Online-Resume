@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 from streamlit_lottie import st_lottie
-from typing import Union
+# from typing import Union
 
 
 st.set_page_config(page_title="Sahana", page_icon="	:cake:", layout="centered", initial_sidebar_state="auto", menu_items=None)

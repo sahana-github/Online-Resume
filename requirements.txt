@@ -1,3 +1,4 @@
 Requests
 streamlit
 streamlit_lottie
+typing

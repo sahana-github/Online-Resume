@@ -1,18 +1,18 @@
 import streamlit as st
-import requests
-import json
-from streamlit_lottie import st_lottie
-# from typing import Union
-from typing_extensions import Literal
+# import requests
+# import json
+# from streamlit_lottie import st_lottie
+# # from typing import Union
+# from typing_extensions import Literal
 
 
 st.set_page_config(page_title="Sahana", page_icon="	:cake:", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
-def animation(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def animation(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
 def style():
     with open('style1.css') as f:
@@ -52,8 +52,9 @@ independently. Extensive experience in Python""")
             - Information science and engineering""",
                 unsafe_allow_html=True  )
         with clm2:
-            anm: Union[dict, None] = animation("https://assets3.lottiefiles.com/packages/lf20_btjhwawa.json")
-            st_lottie(anm,key="animation",width="250px",height="250px")
+            pass
+            # anm: Union[dict, None] = animation("https://assets3.lottiefiles.com/packages/lf20_btjhwawa.json")
+            # st_lottie(anm,key="animation",width="250px",height="250px")
 
     st.write("---")
     st.header("WORK EXPERIENCE")

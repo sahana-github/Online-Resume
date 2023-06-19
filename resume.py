@@ -2,6 +2,8 @@ import streamlit as st
 import requests
 import json
 from streamlit_lottie import st_lottie
+from typing import Union
+
 
 st.set_page_config(page_title="Sahana", page_icon="	:cake:", layout="centered", initial_sidebar_state="auto", menu_items=None)
 
@@ -26,7 +28,8 @@ def hideAll():
     st.markdown(hide,unsafe_allow_html=True)
 
 
-def main():
+def main() -> None:
+
     st.write("---")
     with st.container():
         colm1,colm2 = st.columns(2)
@@ -48,7 +51,7 @@ independently. Extensive experience in Python""")
             - Information science and engineering""",
                 unsafe_allow_html=True  )
         with clm2:
-            anm = animation("https://assets3.lottiefiles.com/packages/lf20_btjhwawa.json")
+            anm: Union[dict, None] = animation("https://assets3.lottiefiles.com/packages/lf20_btjhwawa.json")
             st_lottie(anm,key="animation",width="250px",height="250px")
 
     st.write("---")

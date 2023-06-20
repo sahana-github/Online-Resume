@@ -49,9 +49,10 @@ h6{
     color: #b19797;
 }
 img{
-    width: 90%;
-    height: 85%;
-    margin-top: 20px;
+    width: 75%;
+    height: 83%;
+    margin-top: 25px;
     border: 4px solid yellowgreen;
     border-radius: 2px;
+    margin-left: 15px;
 }

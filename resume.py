@@ -23,7 +23,7 @@ def main() -> None:
     with st.container():
         colm1,colm2 = st.columns(2)
         with colm1:
-            st.image('demo.jpg')
+            st.image('IMG-20240213-WA0031.jpg')
         with colm2:
             st.title("Sahana Durgekar")
             st.subheader("CS Student and Python Developer")
